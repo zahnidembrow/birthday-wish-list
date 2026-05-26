@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Birthday Wishlist</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* The Grid Layout */
+        .wishlist-table {
+            display: grid;
+            grid-template-columns: 1.5fr 2fr 2fr 1fr 1fr;
+            width: 100%;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Header Styling */
+        .table-header {
+            background-color: #f1f1f1;
+            font-weight: bold;
+            padding: 15px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        /* Cell Styling */
+        .table-cell {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center; /* Vertically centers content */
+        }
+
+        /* Align text to top/left inside cells to match a standard table */
+        .table-cell.text-block {
+            display: block;
+            line-height: 1.5;
+        }
+
+        /* Image sizing */
+        .item-image {
+            max-width: 120px;
+            height: auto;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+
+        /* Link styling */
+        .item-link {
+            color: #1a73e8;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        /* Checkbox styling */
+        .checkbox-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .wishlist-checkbox {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎁 My Birthday Wishlist</h1>
+    <p class="subtitle">Here is a quick look at the items on my radar this year.</p>
+
+    <div class="wishlist-table">
+        <div class="table-header">Image</div>
+        <div class="table-header">Link</div>
+        <div class="table-header">Price & Details</div>
+        <div class="table-header">Desire Level</div>
+        <div class="table-header">Check Box</div>
+
+        <div class="table-cell">
+            <img class="item-image" src="https://m.media-amazon.com/images/I/51bL9Zzl+FL.jpg" alt="Click Link to see image">
+        </div>
+        <div class="table-cell">
+            <a class="item-link" href="https://www.amazon.com/dp/B0CBCRC1RK?ref=cm_sw_r_cso_cp_apin_dp_9WVZEDA5DEMZBHYEQV26&ref_=cm_sw_r_cso_cp_apin_dp_9WVZEDA5DEMZBHYEQV26&social_share=cm_sw_r_cso_cp_apin_dp_9WVZEDA5DEMZBHYEQV26&rsd=LwMQHF22AGxsUFhskLa%2FXY5nJpNNUCL0J%2B4S%2F8FAVHLeWr%2BE40pftZAmBoin8ZMHyGw4T2m81rFWyMzeLnf8MtFSvNJHsVogm1TKasESSX6otlKT6lolWhY%3D&edk=AQIDAHi1lw%2FM8UbbSMD9ScOOFEmBMHMthHeEhqDaQYPJUAX3jQGBgeVWOWdXHoUXD8O%2BFbHMAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMH38x9WYKiNEfqdRpAgEQgDsMtF5vUwPDUhKyi4k33PdTi%2FzYZgUFjW4oaT5kcoiLPvQR%2FuZOCx03Gan%2BAjBO02ipjlDprmzqRUv2SQ%3D%3D&th=1" target="_blank">Owala Spider Man Water Bottle</a>
+        </div>
+        <div class="table-cell text-block">
+            <strong>$36</strong><br>
+            So cool plzplzplz
+        </div>
+        <div class="table-cell">10/10</div>
+        <div class="table-cell checkbox-container">
+            <input type="checkbox" class="wishlist-checkbox">
+        </div>
+
+        <div class="table-cell">
+            <img class="item-image" src="https://www.samuel-windsor.co.uk/cdn/shop/products/BV36_SIDE_LR_ecb1db57-6e09-4e6a-9a37-a3d36f26ea0f.jpg?v=1647959919&width=740" alt="Loafers">
+        </div>
+        <div class="table-cell">
+            <a class="item-link" href="https://www.samuel-windsor.co.uk/collections/loafers/products/loafer-black" target="_blank">Samuel Windsor Penny Loafers</a>
+        </div>
+        <div class="table-cell text-block">
+            <strong>$80</strong><br>
+            Black, Size 8.5
+        </div>
+        <div class="table-cell">10/10</div>
+        <div class="table-cell checkbox-container">
+            <input type="checkbox" class="wishlist-checkbox"> 
+        </div>
+
+        <div class="table-cell">
+            <img class="item-image" src="https://m.media-amazon.com/images/I/91drH4ziuhL._AC_AA440_.jpg" alt="Backback">
+        </div>
+        <div class="table-cell">
+            <a class="item-link" href="https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0NTY3OTA4NjExMDAwNDYxOjE3Nzk4MTU1MzQ6c3BfZGV0YWlsX3RoZW1hdGljOjMwMTE3MzIzOTgzNzIwMjo6Ojo&url=%2Fdp%2FB0FBZGDGS9%2Fref%3Dsspa_dk_detail_0%3Fpsc%3D1%26pd_rd_i%3DB0FBZGDGS9%26pd_rd_w%3D8rKXW%26content-id%3Damzn1.sym.51e180c5-5819-4e18-aa5d-d2be38b03d24%26pf_rd_p%3D51e180c5-5819-4e18-aa5d-d2be38b03d24%26pf_rd_r%3DRFC7DGZ1F2CZFA48ZRRA%26pd_rd_wg%3D7g91x%26pd_rd_r%3D3f53f412-df26-463d-9e6d-9325f2f241e2%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM" target="_blank">Arc'teryx Mantis 26 Backpack</a>
+        </div>
+        <div class="table-cell text-block">
+            <strong>$160</strong><br>
+            Colorway:'Dark Stratus', 4.8⭐
+        </div>
+        <div class="table-cell">11/10</div>
+        <div class="table-cell checkbox-container">
+            <input type="checkbox" class="wishlist-checkbox">
+        </div>
+    </div>
+
+</body>
+</html>
